@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Anga Peter | Software Developer & Cybersecurity Portfolio",
     description:
       "Engineering secure software, active defense systems, and data-driven analytical solutions.",
-    url: "https://yourdomain.vercel.app", 
+    url: "https://anga-peter.vercel.app/", 
     siteName: "Anga Peter Portfolio",
     locale: "en_US",
     type: "website",

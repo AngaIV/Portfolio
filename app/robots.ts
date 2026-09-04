@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://yourdomain.vercel.app/sitemap.xml',
+    sitemap: 'https://anga-peter.vercel.app/sitemap.xml',
   };
 }
