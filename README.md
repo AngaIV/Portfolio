@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A responsive, neo-brutalist portfolio website built to showcase my projects and technical background across **Software Engineering**, **Cybersecurity Operations**, and **Data Analytics**.
 
-First, run the development server:
+**Live Demo:** [anga-peter.vercel.app](https://anga-peter.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Technical Overview
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router, React 19)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with custom neo-brutalist styling rules
+* **Deployment:** [Vercel](https://vercel.com/) (Automated CI/CD via GitHub integration)
+* **SEO & Metadata:** Custom `layout.tsx` OpenGraph configuration, dynamic `sitemap.ts`, and `robots.ts`
+
+---
+
+## Key Features
+
+* **Neo-Brutalist Design System:** Custom high-contrast UI components, sharp borders, hard box-shadows, and accessible color palettes.
+* **Featured Projects Carousel:** Dynamic project showcase with filter tags and direct GitHub repository links.
+* **Certifications Sidebar:** Quick access to verified credentials across security, cloud, and data analytics.
+* **SEO & Social Previews:** Configured with OpenGraph cards and Twitter metadata for rich social link previews on LinkedIn, WhatsApp, and X.
+* **Production Build Optimized:** Configured for fast page loads and type-safe Next.js production builds.
+
+---
+
+## Local Development Setup
+
+To run this project locally on your machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AngaIV/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Project Structure
+
+```
+my-portfolio/
+├── app/
+│   ├── components/       # Custom UI sections (Hero, ProjectsAndCerts, etc.)
+│   ├── data/             # Static JSON/TS project and certification entries
+│   ├── globals.css       # Global styles and Tailwind directives
+│   ├── layout.tsx        # App layout, root fonts, and metadata
+│   ├── page.tsx          # Homepage layout
+│   ├── robots.ts         # Automated search engine crawler rules
+│   └── sitemap.ts        # Automated XML sitemap generation
+├── public/               # Static assets and icons
+└── next.config.ts        # Next.js configuration settings
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository is connected to Vercel. Any changes pushed to the `main` branch automatically trigger a production build and deployment.
