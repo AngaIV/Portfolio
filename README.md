@@ -18,7 +18,7 @@ A responsive, neo-brutalist portfolio website built to showcase my projects and 
 
 ## Key Features
 
-* **Neo-Brutalist Design System:** Custom high-contrast UI components, sharp borders, hard box-shadows, and accessible color palettes.
+* **Neo-Brutalist Design System:** Custom high-contrast UI components, sharp borders, hard box-shadows, and accessible colour palettes.
 * **Featured Projects Carousel:** Dynamic project showcase with filter tags and direct GitHub repository links.
 * **Certifications Sidebar:** Quick access to verified credentials across security, cloud, and data analytics.
 * **SEO & Social Previews:** Configured with OpenGraph cards and Twitter metadata for rich social link previews on LinkedIn, WhatsApp, and X.
