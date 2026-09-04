@@ -1,26 +1,64 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  /* Graph Paper / Grid Texture */
+  .bg-graph-paper {
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Neo-Brutalist Hard Shadows & Card Utilities */
+  .brutal-card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+  }
+
+  .brutal-card-pink {
+    background-color: #FF6B9D;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+  }
+
+  .brutal-card-lime {
+    background-color: #C6F135;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+  }
+
+  .brutal-card-purple {
+    background-color: #7B5FE8;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 0px 0px #000000;
+  }
+
+  /* Interactive Buttons with Press Effect */
+  .brutal-btn {
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px 0px #000000;
+    transition: all 0.1s ease-in-out;
+    font-weight: 700;
+  }
+
+  .brutal-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+
+  .brutal-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
