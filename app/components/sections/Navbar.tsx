@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/*Action Button*/}
         <a
-          href="#contact"
+          href="/#contact"
           className="brutal-btn bg-[#7B5FE8] text-white px-5 py-2 text-sm font-mono uppercase tracking-wider"
         >
           Contact Me
