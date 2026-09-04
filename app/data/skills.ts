@@ -21,9 +21,6 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: 'React' },
       { name: 'Next.js' },
-      { name: 'Node.js' },
-      { name: 'Express.js' },
-      { name: 'Django' },
       { name: 'Tailwind CSS' },
       { name: 'PostgreSQL' },
       { name: 'MySQL' },
